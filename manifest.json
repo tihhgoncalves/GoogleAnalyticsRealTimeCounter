@@ -2,7 +2,7 @@
   "name"              : "Google Analytics RealTime Counter",
   "description"       : "Contador de usuários online na Tab (ao lado do ícone)",
   "manifest_version"  : 2,
-  "version"           : "0.0.1",
+  "version"           : "0.1",
 
   "icons": {
       "16" : "icons/16.png",
