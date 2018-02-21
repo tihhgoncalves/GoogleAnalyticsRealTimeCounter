@@ -10,6 +10,11 @@ $(document).ready(function(){
 
       if(c != c_atual) {
         tihh_setBadge(c);
+
+        //toca som, se o número aumentou
+        if(c > c_atual)
+          tihh_sound();
+
         c_atual = c;
       }
 
@@ -26,4 +31,9 @@ function tihh_setBadge(c){
   });
 
   favicon.badge(c);
+}
+
+var audio = new Audio(chrome.extension.getURL('som/bib.wav'));
+function tihh_sound(){
+  audio.play();
 }

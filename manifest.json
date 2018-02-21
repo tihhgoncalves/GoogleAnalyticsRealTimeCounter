@@ -2,7 +2,7 @@
   "name"              : "Google Analytics RealTime Counter",
   "description"       : "Contador de usuários online na Tab (ao lado do ícone)",
   "manifest_version"  : 2,
-  "version"           : "1.0",
+  "version"           : "1.1",
 
   "icons": {
       "16" : "icons/16.png",
@@ -35,7 +35,10 @@
 
   "permissions": [
     "*://www.google.com/analytics/*",
-    "*://*.google.com/analytics/*",
-    "tabs"
+    "*://*.google.com/analytics/*"
+  ],
+
+  "web_accessible_resources": [
+    "som/*"
   ]
 }
