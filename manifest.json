@@ -22,8 +22,8 @@
       "128": "icons/128.png",
       "256": "icons/256.png"
     },
-    "default_title": "Google Analytics RealTime Counter",      // optional; shown in tooltip
-    "default_popup": "popup/popup.html"        // optional
+    "default_title": "Google Analytics RealTime Counter",
+    "default_popup": "popup/popup.html"
   },
 
   "content_scripts": [
