@@ -22,14 +22,20 @@
       "128": "icons/128.png",
       "256": "icons/256.png"
     },
-    "default_title": "Google Mail",      // optional; shown in tooltip
-    "default_popup": "popup.html"        // optional
+    "default_title": "Google Analytics RealTime Counter",      // optional; shown in tooltip
+    "default_popup": "popup/popup.html"        // optional
   },
 
   "content_scripts": [
     {
       "matches": ["*://www.google.com/analytics/*", "*://*.google.com/analytics/*"],
-      "js": ["jquery.js", "script.js"]
+      "js": ["jquery.js", "favico.js", "script.js"]
     }
+  ],
+
+  "permissions": [
+    "*://www.google.com/analytics/*",
+    "*://*.google.com/analytics/*",
+    "tabs"
   ]
 }

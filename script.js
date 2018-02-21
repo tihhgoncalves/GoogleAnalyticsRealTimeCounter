@@ -1,11 +1,29 @@
 $(document).ready(function(){
-    setInterval(function () {
-        if ($('#ID-overviewCounterValue').length) {
-            var count = $('#ID-overviewCounterValue').text();
-            $('title').text(count + ' - Google Analytics');
 
-        }
+  var c_atual;
 
+  setInterval(function () {
 
-    }, 1000);
+    if ($('#ID-overviewCounterValue').length) {
+
+      var c = $('#ID-overviewCounterValue').text();
+
+      if(c != c_atual) {
+        tihh_setBadge(c);
+        c_atual = c;
+      }
+
+    }
+
+  }, 1000);
+
 });
+
+function tihh_setBadge(c){
+  var favicon = new Favico({
+    type: 'rectangle',
+    animation: 'slide'
+  });
+
+  favicon.badge(c);
+}

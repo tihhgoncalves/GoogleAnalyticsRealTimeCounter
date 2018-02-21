@@ -1,0 +1,19 @@
+body{
+    width: 250px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+#logo{
+    margin: 15px auto;
+    display: block;
+}
+
+#version{
+    color: #CCC;
+    position: fixed;
+    right: 5px;
+    bottom: 1px;
+    font-size: 10px;
+    text-align: right;
+}
